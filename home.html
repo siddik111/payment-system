@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paynow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+    <div class="md:container">
+        <div class="row flex justify-between items-center shadow-sm	 shadow-white py-[20px]">
+            <div class="col">
+                <a href="./home.html" class="logo"><img src="./image/logo.png" alt="#" class="w-[400px] ms-[80px]"></a>
+            </div>
+            <div id="menu" class="col me-[300px]">
+                <span id="input_total_amount" class=" text-3xl border-2 rounded-lg py-[10px] px-[24px] transition">00</span>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="service relative z-10">
+            <div id="pin_chack_box" class=" w-[1320px] h-[600px] bg-white mx-[auto] my-[auto] rounded-lg P-[50px] flex justify-center flex-col items-center absolute left-[100px]">
+                <div class="notifi_box">
+                    
+                </div>
+                <h3 class="text-xl capitalize mx-[auto]  my-[30px] ">Conform Your pin</h3>
+                <input id="chack_pin" class="w-[250px] h-[50px] rounded-lg text-2xl px-[24px] py-[10px] mx-[auto]" type="number" placeholder="enter amount">
+                <p id="error_pin_chack_msg"></p>
+                <span id="conform_pin_btn" class=" w-[100px] border-2 border-black rounded-full flex justify-center p-[15px] mt-[20px] mb-[20px]">Submit</span>
+            </div>
+            <div class="div">
+                <div id="notification_btn" class="w-[50px] h-[50px] rounded-full bg-white absolute top-[50px] right-[120px]">
+                    <img src="./image/notification.png" alt="#" class="bg-cover p-[5px]">
+                </div>
+                <div id="notification_box" class="rounded-lg w-[auto] h-[500px] absolute top-[50px] right-[100px] bg-white">
+                    <h3 class="capitalize text-3xl px-[100px] py-[20px] border-2">notification</h3>
+                    <div id="notifications_msg" class="border-2" px-[10px]>
+                        <!-- <p>55555555555555555555555555</p> -->
+                    </div>
+                    <span id="notification_close_btn" class="text-xl bold px-[12px] py-[5px] rounded-full absolute bottom-[20px] right-[20px] border-2 capitalize">close</span>
+                </div>
+            </div>
+            <div class="service_items mx-[50px] py-[100px] flex justify-around">
+                <div id="cash_in_btn" class="items text-3xl rounded-3xl w-[200px] h-[100px] bg-white flex justify-center items-center capitalize">cash In</div>
+                <div id="cash_out_btn" class="items text-3xl rounded-3xl w-[200px] h-[100px] bg-white flex justify-center items-center capitalize">cash Out</div>
+                <div class="items text-3xl rounded-3xl w-[200px] h-[100px] bg-white flex justify-center items-center capitalize">Payment</div>
+                <div class="items text-3xl rounded-3xl w-[200px] h-[100px] bg-white flex justify-center items-center capitalize">cash In</div>
+            </div>
+            <div id="cashin_box" class=" flex flex-col pt-[30px] items-center rounded-lg mx-[50px] w-[300px] bg-white h-[350px] absolute top-[230px] left-[20px]">
+                <h2 class="my-[30px] capitalize text-3xl ">cash in</h2>
+                <input id="cashin_amount" class="w-[250px] h-[50px] rounded-lg text-2xl px-[24px] py-[10px] mx-[auto]" type="number" placeholder="enter amount">
+                <span id="cash_in_send_btn" class="capitalize border-2 border-black rounded-full flex justify-center p-[15px] mt-[20px]">Send</span>
+            </div>
+            <div id="cashout_box" class=" flex flex-col pt-[30px] items-center rounded-lg mx-[50px] w-[300px] bg-white h-[350px] absolute top-[230px] left-[350px]">
+                <h2 class="my-[30px] capitalize text-3xl ">cash Out</h2>
+                <input id="cashout_amount" class="w-[250px] h-[50px] rounded-lg text-2xl px-[24px] py-[10px] mx-[auto]" type="number" placeholder="enter amount">
+                <p id="error_cashout_amount_msg"></p>
+                <span id="cash_out_send_btn" class="capitalize border-2 border-black rounded-full flex justify-center p-[15px] mt-[20px]">Send</span>
+            </div>
+        </div>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>

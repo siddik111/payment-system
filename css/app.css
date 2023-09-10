@@ -1,0 +1,98 @@
+body{
+    background-color: #EF6262;
+}
+.logo img{
+    margin-left: 50;
+}
+.logIn{
+    border-color: #ddd;
+    color: #ddd;
+    text-transform: uppercase;
+}
+#menu span{
+    color: #00BAFF;
+    background-color: #fff;
+    border-color: transparent;
+    border-color: #00BAFF;
+    font-weight: 800;
+}
+#menu span:hover{
+    color: #fff;
+    background-color: #00BAFF;
+    border-color: #fff;
+}
+#login_box{
+    display: none;
+    background-color: #fff;
+    filter: blur(20%);
+    outline: 1px solid #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: .4s;
+    transform: translate(-50%, 20%);
+}
+input{
+    border: 2px solid #222;
+}
+#user_login_btn:hover{
+    background-color: #00BAFF;
+}
+#error_id_msg{
+    color: red;
+    display: none;
+}
+#error_pass_msg{
+    color: red;
+    display: none;
+}
+.show{
+    display: block !important;
+    
+}
+.remove{
+    display: none;
+}
+.items{
+    transition: .6s;
+}
+.items:hover{
+    color: #fff;
+    background-color: #00BAFF;
+}
+#cashin_box{
+    display: none;
+}
+#cashout_box{
+    display: none;
+}
+#notification_box{
+    display: none;
+}
+#notifications_msg{
+    height: 330px;
+    overflow-y: scroll;
+    
+}
+#notifications_msg p{
+    background-color: #EF6262;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#notifications_msg p span{
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 15px;
+    background-color: #222;
+}
+#pin_chack_box{
+    display: none;
+}
